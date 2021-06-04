@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Todo List</title>
+</head>
+<body>
+<div class="parent">
+    <div class="navigation">
+      <header><p class="title">MyTrack</p></header>
+          <ul class="navUl">
+            <li class="dashboard">Dashboard</li>
+            <li class="calendar">Calendar</li>
+            <li class="teams">Teams</li>
+            <li class="charts">Charts</li>
+            <li class="settings">Settings</li>
+          </ul>
+    </div>
+    <div class="todolist">
+      <div class="containerTodolist">
+        <div class="addTaskMobile"><div class="containerButton"><p class="mobileTitle">New task</p> <img src="plus.svg" class="plus"></div></div>
+       <div class="addClass">
+         <div class="titleContainer">
+          <p class="newTaskTitle">New task</p>
+          <div class="crossContainer"><img src="cross.svg" class="cross"></div>
+        </div>
+          <div class="newTaskAdd">
+            <input type="text" placeholder="Insert task title..." class="inputText">
+            <span class="descriptor">High priority</span>
+            <input type="checkbox" name="" class="priorityCheck">
+            <button class="buttonNewTask">ADD</button>
+          </div>
+        </div>
+        <div class="progressList">
+          <div class="listTitle"><p>In progress</p><div class="progressNumber"><p>0</p></div></div>
+          <ol class="notCompleted">
+          </ol>
+        </div>
+        <div class="doneList">
+          <div class="listTitle"><p>Done</p><div class="progressNumber"><p>0</p></div></div>
+          <ol class="completed">
+            
+          </ol>
+        </div>
+      </div>
+    </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
